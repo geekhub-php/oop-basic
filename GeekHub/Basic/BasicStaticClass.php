@@ -18,6 +18,11 @@ class BasicStaticClass
         return self::$privacySettings;
     }
 
+
+    public static function getFirst($text)
+    {
+        return $text;
+    }
 }
 
 

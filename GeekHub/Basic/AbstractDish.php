@@ -17,14 +17,14 @@ abstract class AbstractDish
         echo (sprintf("I just moved to trash %s dish\n", $this->getName()));
     }
 
+    public function getName()
+    {
+        return $this->name;
+    }
     public function setName($name)
     {
         $this->name = $name;
     }
 
-    public function getName()
-    {
-        return $this->name;
-    }
 
 }

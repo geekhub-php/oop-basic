@@ -11,7 +11,7 @@ class BasicClass
 
     private $tags;
 
-    public function __constructor($author = null)
+    public function __construct($author = null)
     {
         $this->author = $author;
         $this->tags = array();

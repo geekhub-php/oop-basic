@@ -3,8 +3,9 @@ namespace GeekHub\Basic;
 
 use GeekHub\Basic\AbstractDish;
 use GeekHub\Basic\EatebleInterface;
+use GeekHub\Basic\DrinkableInterface;
 
-class PastaDish extends AbstractDish implements EatebleInterface
+class BorschDish extends AbstractDish implements EatebleInterface, DrinkableInterface
 {
     public $isPrepared;
 
@@ -43,6 +44,9 @@ class PastaDish extends AbstractDish implements EatebleInterface
         echo (sprintf('I just ate Pasta with name "%s"', $this->getName()));
         echo('<br>');
     }
+
+    public function drink()
+    {}
 
     public function moveToTrash()
     {
